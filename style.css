@@ -5,14 +5,24 @@
 }
 
 /* CONTAINER */
-
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(211, 218, 43, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
 .container {
   display: flex;
   height: 500px;
   width: 800px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: auto;
   margin-top: 100px;
+  box-shadow: 0 10px 20px black;
 }
 
 /* LOGIN FORM */
@@ -66,4 +76,18 @@
 
 .form a:hover {
   color: #fd4e4e;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: blanchedalmond;
+}
+
+.right-side img {
+  width: 400px;
+  height: 400px;
 }
